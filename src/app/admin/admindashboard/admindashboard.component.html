@@ -1,0 +1,19 @@
+<ul> 
+    <div *ngFor="let feed of feedback"> 
+        <div class="container">
+            <div class="jumbotron">
+                <div class="text-right text-warning">
+                    <h2>UserName:{{feed.username}}</h2>
+                    <img src="{{feed.image}}" alt="photo" width="80px">
+                </div>
+                <div class="text-center">
+                    <h4>Review:{{feed.feedback}}</h4>
+                </div>
+                <div class="text-center">
+                    <h4>Rating:{{feed.rating}}</h4>
+                </div>
+            </div>                
+        </div>        
+    </div>
+</ul>
+

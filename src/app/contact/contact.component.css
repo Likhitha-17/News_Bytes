@@ -1,0 +1,13 @@
+.jumbotron{
+    background-color: black;
+    color: white;
+    width: 50%;
+    height: fit-content;
+    padding: 25px;
+    margin: 0 0 0 270px;
+    border-radius: 14px;
+}
+.jumbotron h2{
+    color: blue;
+    text-decoration: underline;
+}

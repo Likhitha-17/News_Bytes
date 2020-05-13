@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="jumbotron">
+        <form #ref="ngForm" (ngSubmit)="submitForm(ref.value)"> 
+            <h2>Reset Password</h2>
+            <br>
+            <div class="form-check">
+                    <label for="username">Username</label><br>
+                    <input type="text" name="username" id="username" class="form-control" ngModel>  
+            </div>
+            <br>
+            <div class="form-check">
+                <label for="password">Enter New Password</label><br>
+                <div class="flex">
+                    <input [type]="show ? 'text' : 'password' " name="password" id="pw" class="form-control"  [(ngModel)]="model.password" 
+                required  (change)="validatePassword()" (click)="toggle()">
+                <button type="button" style="border: 0px;border-radius: 4px; outline-color: aliceblue;" (click)="toggle()">Show</button>
+                </div>
+                <span *ngIf="!model.isPasswordValid" style="color: red;padding-left: 1.75rem;">
+                    Password should contain atleast 8 letters and atleast number</span>
+            </div>
+            <br>
+            <div class="text-center">
+                <input type="submit"  value="reset" [disabled]="!model.isRegisterEnabled" class="btn btn-primary">
+            </div>
+        </form>
+    </div>
+</div>

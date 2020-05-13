@@ -1,0 +1,30 @@
+/* @import url('https://fonts.googleapis.com/icon?family=Material+Icons'); */
+.jumbotron{
+    background-color: black;
+    padding: 25px;
+    border-radius: 14px;
+    width: max-content;
+    height: fit-content;
+    color: white;
+    margin: 30px 0 0 400px;
+    align-items: center;
+    display: flex;
+}
+.jumbotron h2{
+    color: blueviolet;
+    text-decoration: underline;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+.jumbotron input{
+    border-radius: 12px;
+    /* margin: 0px 15px 0px 10px; */
+    border:1px;
+    outline: none;
+}
+.jumbotron i{
+    margin: 0 5px;
+    color: #aaa;
+}

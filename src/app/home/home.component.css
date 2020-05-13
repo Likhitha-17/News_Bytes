@@ -1,0 +1,27 @@
+.jumbotron{
+    /* background-color:black; */
+    background-image: url("https://p4.wallpaperbetter.com/wallpaper/538/11/753/action-adult-athletes-bicycle-wallpaper-preview.jpg");
+    background-size: cover;
+    color: white;
+    border-radius: 14px;
+    border-color: black;
+    border:1px;
+}
+h1,h3{
+    font-style: italic;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    margin:0 0 30px 140px;
+    text-decoration: underline;
+}
+p{
+    text-align: center;
+    margin: 50px 0 0 0;
+    /* color: white; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+a:hover{
+    color: white;
+}

@@ -1,0 +1,27 @@
+.jumbotron{
+    
+    background-color: black;
+    margin: 0 0 0 290px;
+    width: 50%;
+    height: fit-content;
+    padding: 20px;
+    border-radius: 14px;
+}
+.jumbotron h2{
+    color: blueviolet;
+    text-decoration: underline;
+}
+.jumbotron label,p{
+    color: white;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+.jumbotron input{
+    width: 100%;   
+    border: 0px;
+    border-radius: 14px;
+    height: 100%;
+    outline: none;
+}

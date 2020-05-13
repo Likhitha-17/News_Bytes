@@ -1,0 +1,54 @@
+<div class="container">
+    <div class="jumbotron">
+        <h2>Register</h2>
+        <form #ref="ngForm" (ngSubmit)="submitForm(ref)" style="padding: 30px;">
+            <div class="form-group">
+                <label for="un">Username</label>
+                <input type="text" name="username" id="un" class="form-control" autocomplete="off" [(ngModel)]="model.username"  
+                required (change)="isUserNamePopulated()">
+                <span *ngIf="!model.isUserNameValid" style="color: red;padding-left: 1.75rem;">{{model.usernameErrMsg}}</span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" [(ngModel)]="model.emailId" required 
+                (change)="validateEmail()">
+                <span *ngIf="!model.isEmailIdValid" style="color: red;padding-left: 1.75rem;">Invalid Email</span> 
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="pw">Password</label>
+                <div class="flex">
+                    <input [type]="show ? 'text' : 'password' " name="password" id="pw" class="form-control"  [(ngModel)]="model.password" 
+                required  (change)="validatePassword()" (click)="toggle()">
+                <button type="button" style="border: 0px;border-radius: 4px; outline-color: aliceblue;" (click)="toggle()">Show</button>
+                </div>
+                <span *ngIf="!model.isPasswordValid" style="color: red;padding-left: 1.75rem;">
+                Password should contain atleast 8 letters and atleast number</span>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="cpw">Confim Password</label>
+                <input type="password" name="confirmPassword" id="cpw" class="form-control" [(ngModel)]="model.confirmPassword"
+                required (change)="validateConfirmPassword()">
+                <span *ngIf="!model.isPasswordMatched" style="color: red;padding-left: 1.75rem;">Password should match</span>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="db">Date Of Birth(optinal)</label>
+                <input type="date" name="dob" id="db" class="form-control" ngModel>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="pc">Upload profile pic</label>
+                <div class="flex">
+                    <input type="file" name="photo" id="pc" ngModel class="form-control" (input)="getImageFile($event.target.files[0])">
+                    <img [src]="imgUrl" width="80px" alt="">
+                </div>                
+            </div>
+            <br>          
+            <div class="text-center">
+                <button type="submit" class="btn btn-success" [disabled]="!model.isRegisterEnabled">Register</button>
+            </div>
+        </form>                   
+    </div>
+</div>

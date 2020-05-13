@@ -1,0 +1,55 @@
+.jumbotron{
+    
+    background-color: black;
+    margin: 0 0 0 290px;
+    width: 50%;
+    height:300%;
+    padding: 20px;
+    border-radius: 14px;
+}
+.jumbotron h2{
+    color: blue;
+    text-decoration: underline;
+}
+.jumbotron label,p{
+    color: white;
+}
+.fa{
+    color: white;
+}
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+
+.jumbotron input{
+    width: 100%;   
+    border: 1px;
+    border-radius: 14px;
+    height: 300;
+    margin-bottom: 15px;
+}

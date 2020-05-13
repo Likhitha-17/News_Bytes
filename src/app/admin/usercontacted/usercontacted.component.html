@@ -1,0 +1,19 @@
+<ul> 
+    <div *ngFor="let contact of contacts"> 
+        <div class="container">
+            <div class="jumbotron">
+                <div class="text-right text-warning">
+                    <h2>UserName:{{contact.username}}</h2>
+                    <img src="{{contact.image}}" alt="photo" width="80px">
+                </div>
+                <div class="text-center">
+                    <h4>Problem:{{contact.message}}</h4>
+                </div>
+                <div class="text-center">
+                    <h4>User MailAddress:{{contact.email}}</h4>
+                </div>
+            </div>                
+        </div>        
+    </div>
+</ul>
+

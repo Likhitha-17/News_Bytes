@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="container">
+    <div class="jumbotron">
+        <h2>FeedBack</h2>
+        <form #ref="ngForm" (ngSubmit)="submitForm(ref.value)" style="padding: 30px;">
+            <div class="form-group">
+                <label for="fdb">How did you feel about the app?</label>
+                <input type="text" name="feedback" id="fdb" class="form-control" autocomplete="off"
+                    [(ngModel)]="model.feedback" required (change)="validatefeedBack()">
+                <span *ngIf="!model.isfeedBack" style="color: red;padding-left: 1.75rem;">Need to go FeedBack,before Submit!!</span>
+            </div>
+            <div class="form-group">
+                <label style="color: white;">Rate the app(0-5)</label><br>
+                <div class="rate">
+                    <input type="radio" id="star5" name="rate" value="5" (click)="check(5)" />
+                    <label for="star5" title="text">5 stars</label>
+                    <input type="radio" id="star4" name="rate" value="4" (click)="check(4)" />
+                    <label for="star4" title="text">4 stars</label>
+                    <input type="radio" id="star3" name="rate" value="3" (click)="check(3)" />
+                    <label for="star3" title="text">3 stars</label>
+                    <input type="radio" id="star2" name="rate" value="2" (click)="check(2)" />
+                    <label for="star2" title="text">2 stars</label>
+                    <input type="radio" id="star1" name="rate" value="1" (click)="check(1)" />
+                    <label for="star1" title="text">1 star</label>
+                </div>
+            </div>
+            <br><br>
+            <div class="text-center">
+                <button type="submit" class="btn btn-success" [disabled]="!model.isRegisterEnabled">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+<!-- <input type="text" name="feedback" id="fdb" class="form-control" autocomplete="off" [(ngModel)]="model.feedback"
+    required (change)="isfeedBack()">
+<span *ngIf="!model.feedback" style="color: red;padding-left: 1.75rem;">Need to go FeedBack,before Submit!!</span>
+
+<input type="text" name="username" id="un" class="form-control" autocomplete="off" [(ngModel)]="model.username" required
+    (change)="isUserNamePopulated()">
+<span *ngIf="!model.isUserNameValid" style="color: red;padding-left: 1.75rem;">{{model.usernameErrMsg}}</span> -->

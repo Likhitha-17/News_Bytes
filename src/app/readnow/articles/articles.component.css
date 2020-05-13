@@ -1,0 +1,11 @@
+.jumbotron{
+    background-color: white;
+}
+h3
+{
+    float: right;
+}
+a{
+    text-decoration: underline;
+    color: blue;
+}

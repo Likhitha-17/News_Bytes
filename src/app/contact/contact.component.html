@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="jumbotron">
+        <h2>Contact Us</h2>
+        <form #ref="ngForm" (ngSubmit)="submitForm(ref.value)" style="padding: 30px;">
+            <div class="form-group">
+                <label for="n">Name</label>
+                <input type="text" name="username" id="n" class="form-control" autocomplete="off" [(ngModel)]="model.username"  
+                required (change)="isUserNamePopulated()">
+                <span *ngIf="!model.isUserNameValid" style="color: red;padding-left: 1.75rem;">{{model.usernameErrMsg}}</span>
+            </div>
+            <div class="form-group">
+                <label for="email">Mail Id</label>
+                <input type="email" name="email" id="email" class="form-control" [(ngModel)]="model.emailId" required 
+                (change)="validateEmail()">
+                <span *ngIf="!model.isEmailIdValid" style="color: red;padding-left: 1.75rem;">Invalid Email</span> 
+            </div>
+            <div class="form-group">
+                <label for="msg">Message</label>
+                <input type="text" name="message" id="msg" class="form-control" autocomplete="off" required
+                    [(ngModel)]="model.msg" required (change)="validateMessage()">
+                <span *ngIf="!model.ismsg" style="color: red;padding-left: 1.75rem;">Need to provide problem,before Send Message!!</span>
+            </div>
+            <br>
+            <div class="text-center">
+                <button type="submit" class="btn btn-success" [disabled]="!model.isRegisterEnabled">Send Message</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
