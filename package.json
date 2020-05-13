@@ -58,7 +58,7 @@
   },
   "engines": 
   {     
-    "node":"given your node version", 
-    "npm":"given your npm version"   
+    "node":"v12.16.0",
+    "npm":"6.13.4"   
   }
 }
