@@ -160,7 +160,7 @@ userApp.post('/login',(req,res)=>{
             })
         }
     })
-    console.log("user obj is",req.body)
+    // console.log("user obj is",req.body)
 })
 
 const verifyToken=require("../middlewares/verifyToken");
