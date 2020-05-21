@@ -41,7 +41,7 @@ mc.connect(dburl,{useNewUrlParser:true,useUnifiedTopology:true},(err,client)=>{
     app.locals.dbObject=dbo;
 
     // const port=5000;
-    app.listen(process.env.port||8080,()=>{console.log(`server running on port ${process.env.port}`)});
+    app.listen(process.env.PORT||8080,()=>{console.log(`server running on port ${process.env.PORT}`)});
 
 });
 
