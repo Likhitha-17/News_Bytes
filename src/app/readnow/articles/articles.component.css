@@ -9,3 +9,11 @@ a{
     text-decoration: underline;
     color: blue;
 }
+.oval {
+    height: 100px;
+    width: 250px;
+    color:white;
+    background-color: black;
+    border-radius: 50%;
+    margin:30px auto;
+  }

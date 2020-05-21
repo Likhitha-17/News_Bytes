@@ -1,8 +1,8 @@
 .jumbotron{
     
     background-color: black;
-    margin: 0 0 0 290px;
-    width: 50%;
+    margin: 30px auto;
+    width: fit-content;
     height: fit-content;
     padding: 20px;
     border-radius: 14px;
