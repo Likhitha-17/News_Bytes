@@ -12,6 +12,7 @@ import { ForgetPassswordComponent } from './admin/forget-passsword/forget-passsw
 
 
 const routes: Routes = [
+  {path:'',redirectTo:'home',pathMatch:'full'},
   {path:'home',component:HomeComponent},
   {path:'readnow',component:ReadnowComponent},
   {path:'user/contact',component:ContactComponent},
