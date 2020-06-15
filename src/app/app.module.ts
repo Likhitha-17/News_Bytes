@@ -13,7 +13,8 @@ import { ArticlesComponent } from './readnow/articles/articles.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AdminModule } from './admin/admin.module';
 import { UserModule } from './user/user.module';
-
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 
 
 
@@ -26,6 +27,7 @@ import { UserModule } from './user/user.module';
     SignupComponent,
     ReadnowComponent,
     ArticlesComponent,
+    PagenotfoundComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,7 +36,7 @@ import { UserModule } from './user/user.module';
     UserModule,
     AppRoutingModule,HttpClientModule
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
