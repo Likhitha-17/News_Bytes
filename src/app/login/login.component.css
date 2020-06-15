@@ -1,17 +1,17 @@
 /* @import url('https://fonts.googleapis.com/icon?family=Material+Icons'); */
 .jumbotron{
-    background-color: black;
+    background-color: #343a40;
     padding: 25px;
     border-radius: 14px;
     width: max-content;
     height: fit-content;
-    color: white;
+    color: wheat;
     margin: 30px auto;
     align-items: center;
-    display: flex;
+    
 }
 .jumbotron h2{
-    color: blueviolet;
+    color: blue;
     text-decoration: underline;
 }
 .flex{

@@ -1,6 +1,6 @@
 .jumbotron{
     
-    background-color: black;
+    background-color: #343a40;
     margin: 30px auto;
     width: fit-content;
     height: fit-content;
@@ -8,11 +8,11 @@
     border-radius: 14px;
 }
 .jumbotron h2{
-    color: blueviolet;
+    color: blue;
     text-decoration: underline;
 }
 .jumbotron label,p{
-    color: white;
+    color: wheat;
 }
 .flex{
     display: flex;

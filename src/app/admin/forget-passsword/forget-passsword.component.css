@@ -1,10 +1,10 @@
 .jumbotron{
-    background-color: black;
+    background-color: #343a40;
     padding: 25px;
     border-radius: 14px;
     width: fit-content;
     height: fit-content;
-    color: white;
+    color: wheat;
     margin: 50px 0 0 400px;
     align-items: center;
     display: flex;

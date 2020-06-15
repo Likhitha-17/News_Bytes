@@ -1,3 +1,23 @@
+.bg-image {
+  /* The image used */
+  background-image: url("/assets/image/s1.png");
+  
+  -webkit-filter: blur(2px);
+-moz-filter: blur(2px);
+-o-filter: blur(2px);
+-ms-filter: blur(2px);
+filter: blur(2px);
+position: fixed;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+z-index: -1;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .hexagon {
   height: 152px;
@@ -25,7 +45,7 @@
   margin-left: 95px;
 }
 .a{
-  color: gray;
+  color: wheat;
 }
 .hexagon-inside{
   width: 100%;
@@ -58,12 +78,13 @@
 }
 .jumbotron{
     
-  background-color: black;
+  background-color: #343a40;
   margin: 50px auto;
   width: 75%;
   height:300%;
   padding: 20px;
   border-radius: 14px;
+  color: wheat;
 }
 /* .column {
     float: left;

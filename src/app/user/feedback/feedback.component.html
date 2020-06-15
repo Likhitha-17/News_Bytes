@@ -11,7 +11,7 @@
                 <span *ngIf="!model.isfeedBack" style="color: red;padding-left: 1.75rem;">Need to go FeedBack,before Submit!!</span>
             </div>
             <div class="form-group">
-                <label style="color: white;">Rate the app(0-5)</label><br>
+                <label style="color: wheat;">Rate the app(0-5)</label><br>
                 <div class="rate">
                     <input type="radio" id="star5" name="rate" value="5" (click)="check(5)" />
                     <label for="star5" title="text">5 stars</label>
@@ -27,7 +27,7 @@
             </div>
             <br><br>
             <div class="text-center">
-                <button type="submit" class="btn btn-success" [disabled]="!model.isRegisterEnabled">Submit</button>
+                <button type="submit" class="btn btn-primary" [disabled]="!model.isRegisterEnabled">Submit</button>
             </div>
         </form>
     </div>

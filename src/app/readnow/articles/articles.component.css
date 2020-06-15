@@ -12,8 +12,8 @@ a{
 .oval {
     height: 100px;
     width: 250px;
-    color:white;
-    background-color: black;
+    color:wheat;
+    background-color: #343a40;
     border-radius: 50%;
     margin:30px auto;
   }
