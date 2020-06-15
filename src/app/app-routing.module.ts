@@ -9,6 +9,7 @@ import { SignupComponent } from './signup/signup.component';
 import { AdmindashboardComponent } from './admin/admindashboard/admindashboard.component';
 import { FeedbackComponent } from './user/feedback/feedback.component';
 import { ForgetPassswordComponent } from './admin/forget-passsword/forget-passsword.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 
 const routes: Routes = [
@@ -21,7 +22,8 @@ const routes: Routes = [
   {path:'user/signup',component:SignupComponent},
   {path:'admindashboard',component:AdmindashboardComponent},
   {path:'feedback',component:FeedbackComponent},
-  {path:'forget-password',component:ForgetPassswordComponent}
+  {path:'forget-password',component:ForgetPassswordComponent},
+  {path:"**",component:PagenotfoundComponent}
 ];
 
 @NgModule({
