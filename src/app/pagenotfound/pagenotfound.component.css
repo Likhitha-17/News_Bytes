@@ -1,0 +1,11 @@
+.jumbotron{
+    background-color: #343a40;
+    margin: 120px auto;
+    width: fit-content;
+    height: fit-content;
+}
+.text-center{
+    font-family: 'Playfair Display', serif;
+    color:wheat; 
+    text-align: center; 
+}
