@@ -1,7 +1,7 @@
 .jumbotron{
-    background-color:black;
-    background-image: url("https://p4.wallpaperbetter.com/wallpaper/538/11/753/action-adult-athletes-bicycle-wallpaper-preview.jpg");
-    background-size: cover;
+/*     background-color:black; */
+/*     background-image: url("https://p4.wallpaperbetter.com/wallpaper/538/11/753/action-adult-athletes-bicycle-wallpaper-preview.jpg"); */
+/*     background-size: cover; */
     color: wheat;
     background-color: #343a40;
     border-radius: 14px;
@@ -9,6 +9,23 @@
     margin:30px auto;
     text-align: center;
     border:1px;
+}
+.jumbotron .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("https://p4.wallpaperbetter.com/wallpaper/538/11/753/action-adult-athletes-bicycle-wallpaper-preview.jpg");
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+     -o-filter: blur(2px);
+     -ms-filter: blur(2px);
+     filter: blur(2px);
+     z-index: -1;
 }
 h1,h3{
     font-style: italic;
